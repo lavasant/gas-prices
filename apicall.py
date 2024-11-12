@@ -3,6 +3,7 @@
 # importing the requests library
 import requests
 import constants
+import json
 
 # api-endpoint
 URL = "https://api.eia.gov/v2/petroleum/pri/gnd/data/?frequency=weekly&data[0]=value&sort[0][column]=period&sort[0][direction]=desc&offset=0&length=5000&api_key=" + constants.API_KEY
@@ -13,4 +14,5 @@ r = requests.get(url = URL)
 # extracting data in json format
 data = r.json()
 
-print(data)
+with open('data.json', 'w', encoding='utf-8') as f:
+    json.dump(data, f, ensure_ascii=False, indent=4)
