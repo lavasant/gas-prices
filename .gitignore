@@ -163,4 +163,7 @@ cython_debug/
 
 # Secrets
 constants.py
+
+# Data files
 data.json
+gas_prices.csv
