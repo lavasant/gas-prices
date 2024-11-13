@@ -8,10 +8,13 @@ print()
 
 for line in infile:
     try:
-        print(line)
-        # date = line.split(",")[0]
-        # year = date[-4:]
-        # if year == "2024":
+        # print(line)
+        date = line.split(",")[0]
+        area = line.split(",")[2]
+        product = line.split(",")[4]
+        value = line.split(",")[10]
+        if area == "CLEVELAND" and product == "Regular Gasoline":
+            print(date, area, product, value)
         #     numpeoplekilled = int(line.split(",")[11])
         #     if numpeoplekilled > 0:
         #         print(line, file=outfile)
