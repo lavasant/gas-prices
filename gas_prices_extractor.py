@@ -1,5 +1,5 @@
-infile = open("gas_prices.csv", "r")
-outfile = open("cleveland_gas_prices.csv", "w")
+infile = open("csv/gas_prices.csv", "r")
+outfile = open("csv/cleveland_gas_prices.csv", "w")
 
 
 print(infile)

@@ -19,7 +19,7 @@ API_Data = response["response"]["data"]
 keys = API_Data[0].keys()
 
 # Specify the CSV file name
-filename = "gas_prices.csv"
+filename = "csv/gas_prices.csv"
 
 # Writing to CSV file
 with open(filename, mode='w', newline='') as file:

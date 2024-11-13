@@ -166,4 +166,4 @@ constants.py
 
 # Data files
 data.json
-gas_prices.csv
+csv/
