@@ -17,7 +17,7 @@ for line in infile:
             print(date, area, product, value)
         #     numpeoplekilled = int(line.split(",")[11])
         #     if numpeoplekilled > 0:
-        #         print(line, file=outfile)
+            print(date, area, product, value, file=outfile)
     except:
         print("Error!")
         print("Problem with the following line")
@@ -25,3 +25,6 @@ for line in infile:
 
 infile.close()
 outfile.close()
+
+# https://blog.pythonanywhere.com/169/
+# https://academy.datawrapper.de/article/346-how-to-create-a-live-updating-chart-or-table
